@@ -1,0 +1,9 @@
+---
+- hosts: NOC
+  remote_user: biscuser
+  become: yes
+  become_method: sudo
+  roles:
+  - {role: 'rhel6.6', tags: 'rhel6.6'}
+  - {role: 'rhel6.7', tags: 'rhel6.7'}
+  - {role: 'rhel7.5', tags: 'rhel7.5'}

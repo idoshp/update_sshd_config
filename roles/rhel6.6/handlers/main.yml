@@ -1,0 +1,3 @@
+---
+- name: restart sshd rhel6.6
+  service: name=sshd state=restarted
